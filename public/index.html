@@ -15,34 +15,40 @@
 <body class="relative ">
 <main class="flex flex-col lg:flex-row lg:items-center lg:justify-center min-h-screen relative">
     <div class="container  lg:h-96 font-inter">
-<!--        ==============-->
+        <!--        ==============-->
         <div class="flex flex-col lg:flex-row">
-<!--            ============-->
+            <!--            ============-->
             <div class="lg:w-1/2 xl:w-2/3 order-2 lg:order-1 relative quotes ">
-                <p class="text-center text-base leading-8 xl:leading-10  tracking-wide xl:tracking-wider text-lg lg:text-lg xl:text-[2rem]
+                <p class="text-center text-base leading-8 xl:leading-10 2xl:leading-[50px]  tracking-wide xl:tracking-wider 2xl:tracking-widest
+                text-lg lg:text-lg xl:text-[2rem] 2xl:text-4xl 2xl:text-left
                 text-myBlue-100 font-thin z-10
-                px-2 md:px-12 xl:pl-12 xl:pr-0">
-                    “ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t
-                    recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”
+                px-2 md:px-12 xl:pl-12 xl:pr-0 text-myBlue-200" id="text">
+                    <!--                    “ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t-->
+                    <!--                    recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”-->
                 </p>
                 <ul class="p-2">
-                    <li class="p-1 font-bold">name nmame</li>
-                    <li class="p-1 text-stone-300">Job job</li>
+                    <li class="p-1 font-bold" id="name"></li>
+                    <li class="p-1 text-stone-300" id="job"></li>
                 </ul>
             </div>
             <!--         !pictures           !======================-->
             <div class="lg:w-1/2 xl:w-1/3 order-1 lg:order-2 relative  mt-8 mb-12 lg:mt-1  pattern">
+                <div id="picture">
 
-                <img alt="" class="h-60 w-60 lg:w-96 lg:h-96 xl:w-72 xl:h-72 xl:absolute xl:-left-24 xl:-top-12
-                z-0 rounded-xl shadow-2xl" src="./images/image-tanya.jpg">
+                </div>
+                <!--                                <img alt="" class="h-60 w-60 lg:w-96 lg:h-96 xl:w-80 xl:h-80 2xl:w-96 2xl:h-96 xl:absolute xl:-left-24 xl:-top-12 2xl:-top-2-->
+                <!--                                z-0 rounded-xl shadow-2xl" src="./images/image-tanya.jpg" >-->
 
-                <div class="absolute bottom-4 lg:-bottom-4 bg-white z-10 rounded-3xl shadow-lg hover:shadow-2xl">
-                    <button class="py-2 pl-3 pr-4 ">
-                        <img alt="prev btn" class="h-3" src="./images/icon-prev.svg">
+<!--                <img alt="big pattern" class="hidden 2xl:block 2xl:absolute 2xl:-top-12 2xl:-left-40 2xl:-z-10"-->
+<!--                     src="./images/pattern-bg.svg">-->
+
+                <div class="absolute bottom-4 lg:-bottom-4 xl:bottom-0 xl:-left-12  bg-white z-10 rounded-3xl shadow-lg hover:shadow-2xl
+                        2xl:bottom-0 z-50">
+                    <button class="py-2 pl-3 pr-4 2xl:py-4 2xl:pl-4 2xl:pr-6 " id="prev">
+                        <img alt="prev btn" class="h-3 2xl:h-4 " src="./images/icon-prev.svg">
                     </button>
-                    <button class="py-2 pr-3 pl-4">
-                        <img alt="next btn" class="h-3" src="./images/icon-next.svg">
-
+                    <button class="py-2 pr-3 pl-4" id="next">
+                        <img alt="next btn" class="h-3 2xl:h-4" src="./images/icon-next.svg">
                     </button>
                 </div>
             </div>
@@ -54,11 +60,12 @@
         <div class="fixed bottom-0 lg:left-0 z-10 text-sm">
             <ul class="pl-6">
                 <li class="py-1">
-                    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-black">Frontend Mentor</a>.
+                    Challenge by <a class="text-black" href="https://www.frontendmentor.io?ref=challenge"
+                                    target="_blank">Frontend Mentor</a>.
 
                 </li>
                 <li class="py-1">
-                    Coded by <a href="https://dornescu.ro/"  target="_blank" class="text-black">Mihai Dornescu</a>.
+                    Coded by <a class="text-black" href="https://dornescu.ro/" target="_blank">Mihai Dornescu</a>.
 
                 </li>
             </ul>

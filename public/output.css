@@ -532,6 +532,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 0;
 }
 
+.z-50{
+  z-index: 50;
+}
+
 .order-2{
   order: 2;
 }
@@ -550,6 +554,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex{
   display: flex;
+}
+
+.hidden{
+  display: none;
 }
 
 .h-60{
@@ -682,6 +690,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-myBlue-200{
+  --tw-text-opacity: 1;
+  color: hsl(240 18% 77% / var(--tw-text-opacity));
+}
+
 .shadow-2xl{
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -698,12 +711,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url("../public/images/pattern-bg.svg");
   background-position: top center;
   background-repeat: no-repeat;
-  /*background-size: 100% 99%;*/
-  /*padding: 2rem 0;*/
+  background-size: 100% 99%;
+  padding: 2rem 0;
   margin: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   /*padding: 3rem 3.55rem 2.45rem 3.7rem;*/
 }
 
@@ -736,8 +750,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media screen and (min-width:1366px) {
   .pattern{
-    background-size: 75% 99%;
+    background-size: 66% 88%;
     padding: 2rem 0;
+    background-position: inherit;
+  }
+}
+
+@media screen and (min-width:1920px) {
+  .pattern {
+    background-image: none;
   }
 }
 
@@ -751,6 +772,50 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width:1920px) {
+  .quotes{
+    background-position: 20% 0;
+  }
+}
+
+@-webkit-keyframes anim {
+  0% {
+    opacity: 0;
+    transform: translateX(-1px);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+    transform: translateX(-1px);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.show {
+  display: block;
+  -webkit-animation: anim .5s ease-in-out;
+          animation: anim .5s ease-in-out;
+  position: absolute;
+  z-index: 1;
 }
 
 .hover\:shadow-2xl:hover{
@@ -830,8 +895,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: -3rem;
   }
 
-  .xl\:h-72{
-    height: 18rem;
+  .xl\:bottom-12{
+    bottom: 3rem;
+  }
+
+  .xl\:-left-12{
+    left: -3rem;
+  }
+
+  .xl\:top-0{
+    top: 0px;
+  }
+
+  .xl\:bottom-0{
+    bottom: 0px;
+  }
+
+  .xl\:h-80{
+    height: 20rem;
   }
 
   .xl\:w-2\/3{
@@ -842,12 +923,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 33.333333%;
   }
 
-  .xl\:w-72{
-    width: 18rem;
-  }
-
-  .xl\:min-w-\[45\%\]{
-    min-width: 45%;
+  .xl\:w-80{
+    width: 20rem;
   }
 
   .xl\:pl-12{
@@ -868,5 +945,77 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:tracking-wider{
     letter-spacing: 0.05em;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:absolute{
+    position: absolute;
+  }
+
+  .\32xl\:-top-12{
+    top: -3rem;
+  }
+
+  .\32xl\:-left-40{
+    left: -10rem;
+  }
+
+  .\32xl\:bottom-0{
+    bottom: 0px;
+  }
+
+  .\32xl\:-top-2{
+    top: -0.5rem;
+  }
+
+  .\32xl\:-z-10{
+    z-index: -10;
+  }
+
+  .\32xl\:block{
+    display: block;
+  }
+
+  .\32xl\:h-96{
+    height: 24rem;
+  }
+
+  .\32xl\:h-4{
+    height: 1rem;
+  }
+
+  .\32xl\:w-96{
+    width: 24rem;
+  }
+
+  .\32xl\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .\32xl\:pl-4{
+    padding-left: 1rem;
+  }
+
+  .\32xl\:pr-6{
+    padding-right: 1.5rem;
+  }
+
+  .\32xl\:text-left{
+    text-align: left;
+  }
+
+  .\32xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .\32xl\:leading-\[50px\]{
+    line-height: 50px;
+  }
+
+  .\32xl\:tracking-widest{
+    letter-spacing: 0.1em;
   }
 }
